@@ -9,6 +9,8 @@ public class PlayerMovement : MonoBehaviour
 
     public float jumpForce = 20f;
     public Transform feet;
+    public Transform RArm;
+    public Transform LArm;
     public LayerMask groundLayers;
 
     float mx;
@@ -20,13 +22,22 @@ public class PlayerMovement : MonoBehaviour
         {
             Jump();
         }
+
+        if (!IsLeftTouch() && !IsRightTouch())
+        {
+            Vector2 movement = new Vector2(mx * movementSpeed, rb.velocity.y);
+
+            rb.velocity = movement;
+        }
     }
 
     private void FixedUpdate()
     {
-        Vector2 movement = new Vector2(mx * movementSpeed, rb.velocity.y);
+        
 
-        rb.velocity = movement;
+        
+
+
     }
 
     void Jump()
@@ -46,4 +57,27 @@ public class PlayerMovement : MonoBehaviour
         }
         return false;
     }
+
+    public bool IsLeftTouch()
+    {
+        Collider2D groundCheck = Physics2D.OverlapCircle(LArm.position, 0.5f, groundLayers);
+
+        if (groundCheck != null)
+        {
+            return true;
+        }
+        return false;
+    }
+    public bool IsRightTouch()
+    {
+        Collider2D groundCheck = Physics2D.OverlapCircle(RArm.position, 0.5f, groundLayers);
+
+        if (groundCheck != null)
+        {
+            return true;
+        }
+        return false;
+    }
+
+    
 }
