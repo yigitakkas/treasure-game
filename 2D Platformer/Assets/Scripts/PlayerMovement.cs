@@ -23,7 +23,13 @@ public class PlayerMovement : MonoBehaviour
             Jump();
         }
 
-        if (!IsLeftTouch() && !IsRightTouch())
+        if (!IsLeftTouch() && mx == -1)
+        {
+            Vector2 movement = new Vector2(mx * movementSpeed, rb.velocity.y);
+
+            rb.velocity = movement;
+        }
+        else if(!IsRightTouch() && mx == 1)
         {
             Vector2 movement = new Vector2(mx * movementSpeed, rb.velocity.y);
 
@@ -60,7 +66,7 @@ public class PlayerMovement : MonoBehaviour
 
     public bool IsLeftTouch()
     {
-        Collider2D groundCheck = Physics2D.OverlapCircle(LArm.position, 0.5f, groundLayers);
+        Collider2D groundCheck = Physics2D.OverlapCircle(LArm.position, 0.2f, groundLayers);
 
         if (groundCheck != null)
         {
@@ -70,7 +76,7 @@ public class PlayerMovement : MonoBehaviour
     }
     public bool IsRightTouch()
     {
-        Collider2D groundCheck = Physics2D.OverlapCircle(RArm.position, 0.5f, groundLayers);
+        Collider2D groundCheck = Physics2D.OverlapCircle(RArm.position, 0.2f, groundLayers);
 
         if (groundCheck != null)
         {
