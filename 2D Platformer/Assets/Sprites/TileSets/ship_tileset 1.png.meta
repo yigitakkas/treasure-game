@@ -41,6 +41,30 @@ TextureImporter:
   - first:
       213: -276207605276668828
     second: ship_tileset 1_12
+  - first:
+      213: -6664601676959742229
+    second: ship_tileset 1_13
+  - first:
+      213: 2170403171052232620
+    second: ship_tileset 1_14
+  - first:
+      213: -745348247494246944
+    second: ship_tileset 1_15
+  - first:
+      213: 8260355483830291734
+    second: ship_tileset 1_16
+  - first:
+      213: 6760119277670821695
+    second: ship_tileset 1_17
+  - first:
+      213: -4073964740765201421
+    second: ship_tileset 1_18
+  - first:
+      213: -3461414118550434002
+    second: ship_tileset 1_19
+  - first:
+      213: 3025069444185814560
+    second: ship_tileset 1_20
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -250,8 +274,8 @@ TextureImporter:
       name: ship_tileset 1_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 32
+        x: 160
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -271,8 +295,8 @@ TextureImporter:
       name: ship_tileset 1_6
       rect:
         serializedVersion: 2
-        x: 32
-        y: 32
+        x: 192
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -292,7 +316,7 @@ TextureImporter:
       name: ship_tileset 1_7
       rect:
         serializedVersion: 2
-        x: 64
+        x: 0
         y: 32
         width: 32
         height: 32
@@ -313,7 +337,7 @@ TextureImporter:
       name: ship_tileset 1_8
       rect:
         serializedVersion: 2
-        x: 96
+        x: 32
         y: 32
         width: 32
         height: 32
@@ -334,7 +358,7 @@ TextureImporter:
       name: ship_tileset 1_9
       rect:
         serializedVersion: 2
-        x: 128
+        x: 64
         y: 32
         width: 32
         height: 32
@@ -355,8 +379,8 @@ TextureImporter:
       name: ship_tileset 1_10
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
+        x: 96
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -376,8 +400,8 @@ TextureImporter:
       name: ship_tileset 1_11
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
+        x: 128
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -397,8 +421,8 @@ TextureImporter:
       name: ship_tileset 1_12
       rect:
         serializedVersion: 2
-        x: 96
-        y: 0
+        x: 160
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -410,6 +434,174 @@ TextureImporter:
       bones: []
       spriteID: 46c093b75a6ba2cf0800000000000000
       internalID: -276207605276668828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ship_tileset 1_13
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be6875bd5149283a0800000000000000
+      internalID: -6664601676959742229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ship_tileset 1_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caf13fd4f22de1e10800000000000000
+      internalID: 2170403171052232620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ship_tileset 1_15
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ed352ac7bdf7a5f0800000000000000
+      internalID: -745348247494246944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ship_tileset 1_16
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61d872c1c8da2a270800000000000000
+      internalID: 8260355483830291734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ship_tileset 1_17
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3fe6d89aa4c0dd50800000000000000
+      internalID: 6760119277670821695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ship_tileset 1_18
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fb493f27ae5677c0800000000000000
+      internalID: -4073964740765201421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ship_tileset 1_19
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2f8743d23696ffc0800000000000000
+      internalID: -3461414118550434002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ship_tileset 1_20
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0267599c1a43bf920800000000000000
+      internalID: 3025069444185814560
       vertices: []
       indices: 
       edges: []
