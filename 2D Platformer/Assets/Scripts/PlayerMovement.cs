@@ -46,7 +46,7 @@ public class PlayerMovement : MonoBehaviour
 
         anim.SetBool("isGrounded", IsGrounded());
 
-
+        
         Vector2 movement = new Vector2(mx * movementSpeed, rb.velocity.y);
 
         rb.velocity = movement;
