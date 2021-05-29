@@ -11,6 +11,9 @@ public class PlayerAbilities : MonoBehaviour
     public Transform boxHolder;
     public float rayDist;
     public float throwSpeed;
+
+    public GameObject StartSpeach;
+    public GameObject FailedSpeach;
     RaycastHit2D grabCheck;
     bool isHolding = false;
     // Update is called once per frame
@@ -47,6 +50,11 @@ public class PlayerAbilities : MonoBehaviour
             isHolding = true;
 
         }
+        else if(grabCheck.collider != null && grabCheck.collider.tag == "NPC")
+        {
+            StartSpeach.SetActive(true);
+        }
+        
        
 
         

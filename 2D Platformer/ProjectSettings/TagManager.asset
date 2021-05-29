@@ -7,6 +7,8 @@ TagManager:
   - Ground
   - Items
   - Kazan
+  - NPC
+  - Bubble
   layers:
   - Default
   - TransparentFX
