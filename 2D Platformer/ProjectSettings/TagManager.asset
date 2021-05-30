@@ -9,6 +9,8 @@ TagManager:
   - Kazan
   - NPC
   - Bubble
+  - Note
+  - Instrument
   layers:
   - Default
   - TransparentFX

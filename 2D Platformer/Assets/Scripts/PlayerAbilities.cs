@@ -15,7 +15,7 @@ public class PlayerAbilities : MonoBehaviour
     public GameObject StartSpeach;
     public GameObject FailedSpeach;
     RaycastHit2D grabCheck;
-    bool isHolding = false;
+    public bool isHolding = false;
     // Update is called once per frame
     void Update()
     {
@@ -36,13 +36,18 @@ public class PlayerAbilities : MonoBehaviour
             DropItem();
         }
 
+        if (!grabCheck)
+        {
+            isHolding = false;
+        }
+
     }
     void GrabItem()
     {
         
         if (grabCheck.collider != null && grabCheck.collider.tag == "Items"&& !isHolding)
         {
-            
+
             grabCheck.collider.gameObject.transform.parent = boxHolder;
             grabCheck.collider.gameObject.transform.position = boxHolder.position;
             grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
@@ -53,6 +58,16 @@ public class PlayerAbilities : MonoBehaviour
         else if(grabCheck.collider != null && grabCheck.collider.tag == "NPC")
         {
             StartSpeach.SetActive(true);
+        }
+
+        else if(grabCheck.collider != null && grabCheck.collider.tag == "Note" && !isHolding)
+        {
+            grabCheck.collider.gameObject.transform.parent = boxHolder;
+            grabCheck.collider.gameObject.transform.position = boxHolder.position;
+            grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
+            grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(transform.localScale.x, 1) * throwSpeed;
+            isHolding = true;
+            grabCheck.collider.gameObject.GetComponent<AudioSource>().Play();
         }
         
        
@@ -67,7 +82,15 @@ public class PlayerAbilities : MonoBehaviour
             grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = false;
             isHolding = false;
         }
-      
+        else if (grabCheck.collider != null && grabCheck.collider.tag == "Note" && isHolding)
+        {
+            grabCheck.collider.gameObject.transform.parent = null;
+            grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = false;
+            isHolding = false;
+            grabCheck.collider.gameObject.GetComponent<AudioSource>().Stop();
+        }
+
+
     }
 
 }
