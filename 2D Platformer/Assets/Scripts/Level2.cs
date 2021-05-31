@@ -35,7 +35,7 @@ public class Level2 : MonoBehaviour
 
     private void Update()
     {
-        if (Sax != null)
+        if (Sax != null && SaxNote != null)
         {
             x = Sax.transform.position.x - SaxNote.transform.position.x;
             y = Sax.transform.position.y - SaxNote.transform.position.y;
@@ -43,11 +43,11 @@ public class Level2 : MonoBehaviour
         
         if ((x < 1 && x > -1) && (y - 1 < 0 && y > -1))
         {
-            Destroy(Sax);
+            
             Destroy(SaxNote);
         }
 
-        if (Guitar != null)
+        if (Guitar != null && GuitarNote != null)
         {
             x = Guitar.transform.position.x - GuitarNote.transform.position.x;
             y = Guitar.transform.position.y - GuitarNote.transform.position.y;
@@ -55,10 +55,10 @@ public class Level2 : MonoBehaviour
 
         if ((x < 1 && x > -1) && (y - 1 < 0 && y > -1))
         {
-            Destroy(Guitar);
+            
             Destroy(GuitarNote);
         }
-        if (Drum != null)
+        if (Drum != null && DrumNote != null)
         {
             x = Drum.transform.position.x - DrumNote.transform.position.x;
             y = Drum.transform.position.y - DrumNote.transform.position.y;
@@ -66,10 +66,10 @@ public class Level2 : MonoBehaviour
 
         if (  (x < 1 && x>-1) && (y - 1 < 0 && y > -1))
         {
-            Destroy(Drum);
+           
             Destroy(DrumNote);
         }
-        if (Violin != null)
+        if (Violin != null&& ViolinNote!=null)
         {
             x = Violin.transform.position.x - ViolinNote.transform.position.x;
             y = Violin.transform.position.y - ViolinNote.transform.position.y;
@@ -80,7 +80,7 @@ public class Level2 : MonoBehaviour
 
         if ((x < 1 && x > -1) && (y - 1 < 0 && y > -1))
         {
-            Destroy(Violin);
+            
             Destroy(ViolinNote);
         }
 
