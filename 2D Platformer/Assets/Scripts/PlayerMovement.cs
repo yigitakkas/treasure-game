@@ -11,8 +11,6 @@ public class PlayerMovement : MonoBehaviour
 
     public float jumpForce = 20f;
     public Transform feet;
-    public Transform RArm;
-    public Transform LArm;
     public LayerMask groundLayers;
 
     float mx;

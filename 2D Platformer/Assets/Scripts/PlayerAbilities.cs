@@ -57,6 +57,7 @@ public class PlayerAbilities : MonoBehaviour
         }
         else if(grabCheck.collider != null && grabCheck.collider.tag == "NPC")
         {
+            Debug.Log("s");
             StartSpeach.SetActive(true);
         }
 
