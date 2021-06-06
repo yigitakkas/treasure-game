@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Level3 : MonoBehaviour
 {
@@ -39,6 +40,7 @@ public class Level3 : MonoBehaviour
         {
             Destroy(collision.gameObject);
             Debug.Log("Bölüm Tamamlandý.");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
 
     }

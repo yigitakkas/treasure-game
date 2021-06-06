@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Level2 : MonoBehaviour
 {
@@ -13,13 +14,15 @@ public class Level2 : MonoBehaviour
     GameObject GuitarNote;
     GameObject Violin;
     GameObject ViolinNote;
+    GameObject[] Notes;
     float x; 
-    float y; 
+    float y;
+    int noteCounter=0;
 
     private void Start()
     {
         GameObject[] Instruments = GameObject.FindGameObjectsWithTag("Instrument");
-        GameObject[] Notes = GameObject.FindGameObjectsWithTag("Note");
+        Notes = GameObject.FindGameObjectsWithTag("Note");
         Sax = Instruments[0];
         SaxNote = Notes[0];
         Guitar = Instruments[1];
@@ -45,6 +48,7 @@ public class Level2 : MonoBehaviour
         {
             
             Destroy(SaxNote);
+            noteCounter++;
         }
 
         if (Guitar != null && GuitarNote != null)
@@ -57,6 +61,7 @@ public class Level2 : MonoBehaviour
         {
             
             Destroy(GuitarNote);
+            noteCounter++;
         }
         if (Drum != null && DrumNote != null)
         {
@@ -68,6 +73,7 @@ public class Level2 : MonoBehaviour
         {
            
             Destroy(DrumNote);
+            noteCounter++;
         }
         if (Violin != null&& ViolinNote!=null)
         {
@@ -82,9 +88,16 @@ public class Level2 : MonoBehaviour
         {
             
             Destroy(ViolinNote);
+            noteCounter++;
+        }
+        Debug.Log(noteCounter);
+        
+        if (noteCounter >= 6)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
 
-
-
     }
+
+    
 }
