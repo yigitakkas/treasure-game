@@ -11,6 +11,7 @@ TagManager:
   - Bubble
   - Note
   - Instrument
+  - Animals
   layers:
   - Default
   - TransparentFX
