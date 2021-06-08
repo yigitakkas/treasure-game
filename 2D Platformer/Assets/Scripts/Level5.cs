@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Level5 : MonoBehaviour
 {
@@ -34,7 +35,7 @@ public class Level5 : MonoBehaviour
         }
         if (collision.name == "Door" && b9==null)
         {
-            Debug.Log("Next Level");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 

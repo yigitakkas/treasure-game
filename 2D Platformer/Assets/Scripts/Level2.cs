@@ -6,34 +6,18 @@ using UnityEngine.SceneManagement;
 public class Level2 : MonoBehaviour
 {
 
-    GameObject Sax;
-    GameObject SaxNote;
-    GameObject Drum;
-    GameObject DrumNote;
-    GameObject Guitar;
-    GameObject GuitarNote;
-    GameObject Violin;
-    GameObject ViolinNote;
-    GameObject[] Notes;
+    public GameObject Sax;
+    public GameObject SaxNote;
+    public GameObject Drum;
+    public GameObject DrumNote;
+    public GameObject Guitar;
+    public GameObject GuitarNote;
+    public GameObject Violin;
+    public GameObject ViolinNote;
     float x; 
     float y;
-    int noteCounter=0;
 
-    private void Start()
-    {
-        GameObject[] Instruments = GameObject.FindGameObjectsWithTag("Instrument");
-        Notes = GameObject.FindGameObjectsWithTag("Note");
-        Sax = Instruments[0];
-        SaxNote = Notes[0];
-        Guitar = Instruments[1];
-        GuitarNote = Notes[1];
-        Drum = Instruments[2];
-        DrumNote = Notes[2];
-        Violin = Instruments[3];
-        ViolinNote = Notes[3];
-
-
-    }
+    
 
 
     private void Update()
@@ -48,7 +32,6 @@ public class Level2 : MonoBehaviour
         {
             
             Destroy(SaxNote);
-            noteCounter++;
         }
 
         if (Guitar != null && GuitarNote != null)
@@ -61,7 +44,6 @@ public class Level2 : MonoBehaviour
         {
             
             Destroy(GuitarNote);
-            noteCounter++;
         }
         if (Drum != null && DrumNote != null)
         {
@@ -73,7 +55,6 @@ public class Level2 : MonoBehaviour
         {
            
             Destroy(DrumNote);
-            noteCounter++;
         }
         if (Violin != null&& ViolinNote!=null)
         {
@@ -88,16 +69,19 @@ public class Level2 : MonoBehaviour
         {
             
             Destroy(ViolinNote);
-            noteCounter++;
         }
-        Debug.Log(noteCounter);
-        
-        if (noteCounter >= 6)
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        }
+
+        Invoke("nextLevel",1);
 
     }
 
     
+    void nextLevel()
+    {
+        if (ViolinNote == null && GuitarNote == null && DrumNote == null && SaxNote == null) 
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+       
+    }
 }

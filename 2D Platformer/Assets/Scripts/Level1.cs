@@ -17,7 +17,7 @@ public class Level1 : MonoBehaviour
         bubbles = GameObject.FindGameObjectsWithTag("Bubble");
         Debug.Log(bubbles[0]);
         Debug.Log(bubbles[1]);
-        bubbles[1].SetActive(false);
+        bubbles[0].SetActive(false);
     }
 
     
@@ -85,7 +85,7 @@ public class Level1 : MonoBehaviour
         bubbles[0].SetActive(false);
         kazan.GetComponent<Renderer>().material.color = new Color(1, 1, 1);
         kazanEmpty = true;
-        bubbles[1].SetActive(true);
+        bubbles[0].SetActive(true);
 
     }
 

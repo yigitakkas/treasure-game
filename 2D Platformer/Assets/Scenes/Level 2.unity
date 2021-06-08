@@ -2489,6 +2489,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97483b4b12f2841488db83aea11c1ae1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Sax: {fileID: 2078724990}
+  SaxNote: {fileID: 421872627}
+  Drum: {fileID: 783247579}
+  DrumNote: {fileID: 2139425130}
+  Guitar: {fileID: 1328619408}
+  GuitarNote: {fileID: 841704701}
+  Violin: {fileID: 375950796}
+  ViolinNote: {fileID: 1032806821}
 --- !u!1 &375950796
 GameObject:
   m_ObjectHideFlags: 0
@@ -4229,7 +4237,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.999552, y: 4.73}
+  m_AnchoredPosition: {x: 5.032591, y: 4.73}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &934342547
@@ -8175,8 +8183,6 @@ MonoBehaviour:
   anim: {fileID: 1605783837}
   jumpForce: 20
   feet: {fileID: 644800519}
-  RArm: {fileID: 0}
-  LArm: {fileID: 0}
   groundLayers:
     serializedVersion: 2
     m_Bits: 256
@@ -8306,6 +8312,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97483b4b12f2841488db83aea11c1ae1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Sax: {fileID: 2078724990}
+  SaxNote: {fileID: 421872627}
+  Drum: {fileID: 783247579}
+  DrumNote: {fileID: 2139425130}
+  Guitar: {fileID: 1328619408}
+  GuitarNote: {fileID: 841704701}
+  Violin: {fileID: 375950796}
+  ViolinNote: {fileID: 1032806821}
 --- !u!1 &1615689893
 GameObject:
   m_ObjectHideFlags: 0
@@ -11102,7 +11116,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.5144509, y: 1}
+    m_SensorSize: {x: 1.7784201, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -11136,7 +11150,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.999552, y: 4.73}
+  m_AnchoredPosition: {x: 5.032591, y: 4.73}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2030656773
