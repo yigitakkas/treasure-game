@@ -4536,7 +4536,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.0828013, y: 4.73}
+  m_AnchoredPosition: {x: 5.010161, y: 4.73}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &934342547
@@ -9074,6 +9074,7 @@ MonoBehaviour:
   throwSpeed: 5
   StartSpeach: {fileID: 1855150759}
   FailedSpeach: {fileID: 1253818024}
+  isHolding: 0
 --- !u!95 &1605783837
 Animator:
   serializedVersion: 3
@@ -9110,8 +9111,6 @@ MonoBehaviour:
   anim: {fileID: 1605783837}
   jumpForce: 20
   feet: {fileID: 644800519}
-  RArm: {fileID: 0}
-  LArm: {fileID: 0}
   groundLayers:
     serializedVersion: 2
     m_Bits: 256
@@ -9298,7 +9297,7 @@ Transform:
   m_GameObject: {fileID: 1615689893}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4, y: 5, z: 1}
+  m_LocalScale: {x: 5, y: 6, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -12687,7 +12686,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.179584, y: 1}
+    m_SensorSize: {x: 1.5992142, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -12721,7 +12720,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.0828013, y: 4.73}
+  m_AnchoredPosition: {x: 5.010161, y: 4.73}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2030656773

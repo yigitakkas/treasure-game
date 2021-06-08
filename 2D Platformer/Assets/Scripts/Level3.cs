@@ -12,12 +12,25 @@ public class Level3 : MonoBehaviour
     public GameObject Kiraz;
     public GameObject Uzum;
     public GameObject Cilek;
+    public GameObject startS;
+    public GameObject AciklamaS;
+    public GameObject FailS;
 
 
     void Start()
     {
-        Invoke("Goster", 2);
-        Invoke("Gizle", 5);
+        
+
+        startS = GameObject.Find("StartSpeach");
+        AciklamaS = GameObject.Find("Acýklama");
+        FailS = GameObject.Find("FailSpeach");
+
+        AciklamaS.SetActive(false);
+        FailS.SetActive(false);
+
+        Invoke("Konusma",10);
+        Invoke("Goster",5);
+        Invoke("Gizle",9);
 
     }
 
@@ -32,6 +45,11 @@ public class Level3 : MonoBehaviour
             Destroy(collision.gameObject);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
+        }
+        else if(collision.gameObject.name!="Cilek Kutusu")
+        {
+            FailS.SetActive(true);
+            AciklamaS.SetActive(false);
         }
         
 
@@ -53,5 +71,12 @@ public class Level3 : MonoBehaviour
         Kiraz.SetActive(false);
         Uzum.SetActive(false);
         Cilek.SetActive(false);
+    }
+
+
+    void Konusma()
+    {
+        AciklamaS.SetActive(true);
+        startS.SetActive(false);
     }
 }
