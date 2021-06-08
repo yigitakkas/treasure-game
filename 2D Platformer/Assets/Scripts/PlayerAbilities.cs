@@ -55,11 +55,7 @@ public class PlayerAbilities : MonoBehaviour
             isHolding = true;
 
         }
-        else if(grabCheck.collider != null && grabCheck.collider.tag == "NPC")
-        {
-            Debug.Log("s");
-            StartSpeach.SetActive(true);
-        }
+        
 
         else if(grabCheck.collider != null && grabCheck.collider.tag == "Note" && !isHolding)
         {

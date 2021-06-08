@@ -17,7 +17,7 @@ public class Level3 : MonoBehaviour
     void Start()
     {
         Invoke("Goster", 2);
-        Invoke("Gizle", 7);
+        Invoke("Gizle", 5);
 
     }
 
@@ -27,21 +27,13 @@ public class Level3 : MonoBehaviour
     {
 
         
-        if (collision.gameObject.name=="Elma Kutusu")
+        if (collision.gameObject.name=="Cilek Kutusu")
         {
             Destroy(collision.gameObject);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
         }
-        if (Elma==null && collision.gameObject.name=="Muz Kutusu")
-        {
-            Destroy(collision.gameObject);
-        }
-        if(Elma==null && Muz==null &&collision.gameObject.name=="Uzum Kutusu")
-        {
-            Destroy(collision.gameObject);
-            Debug.Log("Bölüm Tamamlandý.");
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        }
+        
 
     }
 
