@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="EndMenu">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Assets\Scripts\EndMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Level1">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgCCEQAAAAAAAgAAAAEAAAAAAAAAAKAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Level1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Level2">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAIAIAABAAAAAAAEAAAEAAAAAAAACBgAQAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Level2.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Level3">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAGAAEIABCAAAAAgAAAAACAAAEEAAABAAAAAAIgAAAA=</HashCode>
+      <FileName>Assets\Scripts\Level3.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Level4">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAgCiAhDAAAEgAACAAEEAEAACBCAAAAAAAABA=</HashCode>
+      <FileName>Assets\Scripts\Level4.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Level5">
+    <Position X="5.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAQAAAAAAAAAAAEAAIAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Level5.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Level6">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAACAABAACIAAAABAABEAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Level6.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MainMenu">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABQgAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAgAAgAAQA=</HashCode>
+      <FileName>Assets\Scripts\MainMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerAbilities">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEQAAQBAAAAAAAAAAgCgAAAAABgAAAAAACAAAAABAAA=</HashCode>
+      <FileName>Assets\Scripts\PlayerAbilities.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerMovement">
+    <Position X="2.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAgAAAAAEAAAAAAAAAQAAAEAIAQAACAACAAI=</HashCode>
+      <FileName>Assets\Scripts\PlayerMovement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
