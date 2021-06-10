@@ -12,6 +12,7 @@ TagManager:
   - Note
   - Instrument
   - Animals
+  - Music
   layers:
   - Default
   - TransparentFX
