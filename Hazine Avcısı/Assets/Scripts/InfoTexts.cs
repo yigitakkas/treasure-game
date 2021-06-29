@@ -9,14 +9,11 @@ public class InfoTexts : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            if (infoText.activeSelf)
-            {
-                infoText.SetActive(false);
-            }
-            else
-            {
-                infoText.SetActive(true);
-            }
+            infoText.SetActive(true);
+        }
+        if (Input.GetMouseButtonUp(0))
+        {
+            infoText.SetActive(false);
         }
     }
 

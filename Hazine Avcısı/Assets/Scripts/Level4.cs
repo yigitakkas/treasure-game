@@ -50,7 +50,14 @@ public class Level4 : MonoBehaviour
         Invoke("Gizle",1);
         
     }
-    
+    private void Update()
+    {
+        if (monkeyCard == null && crocCard == null && snakeCard == null && bearCard == null)
+        {
+            Destroy(GameObject.Find("Barier"));
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.name == "Cave")
