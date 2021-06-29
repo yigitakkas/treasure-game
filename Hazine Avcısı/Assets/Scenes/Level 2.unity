@@ -4218,9 +4218,9 @@ RectTransform:
   m_Father: {fileID: 1979938998}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 207, y: 113.67}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -255, y: -115.36}
   m_SizeDelta: {x: 455.06, y: 161.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &757323228
@@ -5058,7 +5058,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.044709, y: 4.73}
+  m_AnchoredPosition: {x: 5.045536, y: 4.73}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &934342547
@@ -7800,9 +7800,9 @@ RectTransform:
   m_Father: {fileID: 1979938998}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 207, y: 113.672485}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -255, y: -115.36}
   m_SizeDelta: {x: 455.06, y: 161.0951}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1208147258
@@ -9751,9 +9751,9 @@ RectTransform:
   m_Father: {fileID: 1979938998}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 207, y: 111.10333}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -255, y: -115.36}
   m_SizeDelta: {x: 455.06, y: 166.2333}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1724812944
@@ -11915,10 +11915,10 @@ RectTransform:
   m_Father: {fileID: 1979938998}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 207, y: 115.38519}
-  m_SizeDelta: {x: 455.06, y: 157.6696}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -255, y: -115.36}
+  m_SizeDelta: {x: 455.06, y: 157.66962}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1818905383
 MonoBehaviour:
@@ -12366,7 +12366,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.8752437, y: 1}
+    m_SensorSize: {x: 1.8818493, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -12400,7 +12400,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.044709, y: 4.73}
+  m_AnchoredPosition: {x: 5.045536, y: 4.73}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2020777810
